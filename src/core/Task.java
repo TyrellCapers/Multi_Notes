@@ -86,4 +86,13 @@ public class Task {
 
         }
     }
+
+    public void togglePendingStatus(){
+        if(this.getStatus().equals("Pending")){
+            this.setStatus("In Progress");
+        }
+        else{
+            this.setStatus("Pending");
+        }
+    }
 }
